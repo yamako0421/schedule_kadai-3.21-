@@ -6,8 +6,8 @@ def self.total_count
     count
   end
 
-  validates :title, length: { maximum: 30}, presence: true
-  validates :start_date, uniqueness: true, presence: true
+  validates :title, length: { maximum: 20}, presence: true
+  validates :start_date, presence: true
   validates :end_date, presence: true
   validates :memo, length: { maximum: 500 }
 
